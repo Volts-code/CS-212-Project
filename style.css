@@ -7,7 +7,7 @@
 
 
 body{
-background-image: url(images/library-bg.jpg.jpg);
+background-image: url(library-bg.jpg.jpg);
 backdrop-filter:blur(3px);
 background-size: cover;
 background-position: center;
