@@ -5,24 +5,56 @@
     <title>
         Realm of Reading
     </title>
-    <link rel="stylesheet" href="book-styles.css">
+    <link rel="stylesheet" href="/CS-212-Phase1/book-styles.css">
     </head>
 
 <body>
-    <header>
-        <h1 class="site-title">Realm of Reading</h1>
-    </header> 
+    <header class="navbar">
+        <div class="logo">
+            <h2>Realm of Reading</h2>
+        </div>
+        <div class="navmenu">
 
-    <nav class="navbar">
-        <div class="container">
             <ul>
-                <li>Home</li>
-                <li>Books</li>
-                <li>Statistics</li>
-                <li>Contacts</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-    </nav>
+    </header>
+
+     <div class="container">
+        <h1>Books Collection</h1>
+        <input type="text" id="search" placeholder="Search by title, author, or genre">
+
+        <div class="sort">
+
+            <label>Sort:</label>
+            <select id="sort">
+                <option value="">None</option>
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+            </select>
+
+        </div>
+
+        <div class="dashboard">
+        <h3>Dashboard</h3>
+
+            <p>Total Books: <span id="totalBooks"></span></p>
+            <p>Borrowed Books: <span id="borrowedBooks"></span></p>
+            <p>Overdue Books: <span id="overdueBooks"></span></p>
+
+        </div>
+
+        <h2>Available Books</h2>
+        <div id="bookList"></div>
+
+        <h2>Borrowed Books</h2>
+        <div id="borrowedList"></div>
+
+    </div>
 
     <div id="books">
         <div class="card">
@@ -226,7 +258,7 @@
 
 <footer class="footer">
     <h3><p>Contacts</p></h3>
-    <p><href="mailto:abc123@gmail.com" abc123@gmail.com >Library Email: abc123@gmail.com</a></p>
+    <p><href="mailto:abc123@gmail.com" abc123@gmail.com>Library Email: abc123@gmail.com</a></p>
     <p>Library Phone Number: 123-456-7890</p>
 </footer>
 </body>
