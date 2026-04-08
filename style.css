@@ -15,6 +15,11 @@ background-attachment: fixed;
 }
 
 
+.front-page{
+background-image: url(library-bg.jpg.jpg);
+}
+
+
 .navbar{
     background: rgba(43, 42, 42, 0.9);
     display: flex;
