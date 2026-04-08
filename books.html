@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <title>
+        Realm of Reading
+    </title>
+    <link rel="stylesheet" href="/CS-212-Phase1/book-styles.css">
+    </head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h2>Realm of Reading</h2>
+        </div>
+        <div class="navmenu">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+     <div class="container">
+        <h1>Books Collection</h1>
+        <input type="text" id="search" placeholder="Search by title, author, or genre">
+
+        <div class="sort">
+
+            <label>Sort:</label>
+            <select id="sort">
+                <option value="">None</option>
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+            </select>
+
+        </div>
+
+        <div class="dashboard">
+        <h3>Dashboard</h3>
+
+            <p>Total Books: <span id="totalBooks"></span></p>
+            <p>Borrowed Books: <span id="borrowedBooks"></span></p>
+            <p>Overdue Books: <span id="overdueBooks"></span></p>
+
+        </div>
+
+        <h2>Available Books</h2>
+        <div id="bookList"></div>
+
+        <h2>Borrowed Books</h2>
+        <div id="borrowedList"></div>
+
+    </div>
+
+    <div id="books">
+        <div class="card">
+         <img src="https://m.media-amazon.com/images/I/91fXoFQwgCL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>One Dark Window</p></div>
+            <span class="tag">Fantasy</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Rachel Gillig</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/91F6XIcXVRL._UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>Two Twisted Crowns</p></div>
+            <span class="tag">Fantasy</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Rachel Gillig</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1725958672i/217536270.jpg">
+            <div class="book-title"><p>Quicksilver</p></div>
+            <span class="tag">Fantasy</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Callie Hart</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/91xBRNN9AuL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>Fourth Wing</p></div>
+            <span class="tag">Fantasy</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Rebecca Yarros</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/81Ua99CURsL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>Dune</p></div>
+            <span class="tag">Sci-Fi</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Frank Herbert</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/810W+zAp2DL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>The Martian</p></div>
+            <span class="tag">Sci-Fi</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Andy Weir</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61sKsbPb5GL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>Fahrenheit 451</p></div>
+            <span class="tag">Sci-Fi</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Ray Bradbury</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/715WdnBHqYL._UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>1984</p></div>
+            <span class="tag">Sci-Fi</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: George Orwell</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/612y1xDU+lL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>The Exorcist</p></div>
+            <span class="tag">Horror</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: William Peter Blatty</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/91U7HNa2NQL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>The Shining</p></div>
+            <span class="tag">Horror</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Stephen King</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71n43yTJXvL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>The Amityville Horror</p></div>
+            <span class="tag">Horror</span>\
+            <span class="tag">Status: Available</span>
+            <p>Author: Jay Anson</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/81IrkshIbSL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>A Fragile Enchantment</p></div>
+            <span class="tag">Romance</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Allison Saft</p>
+            <button>Borrow</button>
+        </div>
+   
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/81c9zivzkDL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>Divine Rivals</p></div>
+            <span class="tag">Romance</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Rebecca Ross</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71Ii6a7sajL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>Twisted Love</p></div>
+            <span class="tag">Romance</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Ana Huang</p>
+            <button>Borrow</button>
+        </div>
+   
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71I+IS0Xx-L._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>Twisted Games</p></div>
+            <span class="tag">Romance</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Ana Huang</p>
+            <button>Borrow</button>
+        </div>
+   
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/91XfcIMDrOL._UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>Can't Spell Treason Without Tea</p></div>
+            <span class="tag">Romance</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Rebecca Thorne</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://prodimage.images-bn.com/pimages/9780593622452_p0_v1_s600x595.jpg">
+            <div class="book-title"><p>Pride and Prejudice</p></div>
+            <span class="tag">Classic</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Jane Austen</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/91zU70Aw9IS._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>Jane Eyre</p></div>
+            <span class="tag">Classic</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Charlotte Bronte</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/81WoYpcR34L._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>Animal Farm</p></div>
+            <span class="tag">Classic</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: George Orwell</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/81T4dS6IkaL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>The Great Gatsby</p></div>
+            <span class="tag">Classic</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: F Scott Fitzgerald</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1612238791i/56916837.jpg">
+            <div class="book-title"><p>To Kill a Mockingbird</p></div>
+            <span class="tag">Classic</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Harper Lee</p>
+            <button>Borrow</button>
+        </div>
+    
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61su39k8NUL._AC_UF1000,1000_QL80_.jpg">
+            <div class="book-title"><p>The Handmaid's Tale</p></div>
+            <span class="tag">Classic</span>
+            <span class="tag">Status: Available</span>
+            <p>Author: Margaret Atwood</p>
+            <button>Borrow</button>
+        </div>
+    </div>
+
+<footer class="footer">
+    <h3><p>Contacts</p></h3>
+    <p><href="mailto:abc123@gmail.com" abc123@gmail.com>Library Email: abc123@gmail.com</a></p>
+    <p>Library Phone Number: 123-456-7890</p>
+</footer>
+</body>
+</html>
