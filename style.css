@@ -21,7 +21,7 @@ background-image: url(library-bg.jpg.jpg);
 
 
 .navbar{
-    background: rgba(43, 42, 42, 0.9);
+    background: rgb(19, 38, 92);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -238,7 +238,7 @@ select{
 .contact-form button{
     margin-top: 15px;
     padding: 10px;
-    background: gray;
+    background: rgb(19, 38, 92);
     color: white;
     border: none;
     border-radius: 5px;
@@ -248,7 +248,7 @@ select{
 
 .contact-footer{
     margin-top:40px;
-    background:#2b2a2a;
+    background:rgb(19, 38, 92);
     color:white;
     padding:25px;
     text-align:center;
