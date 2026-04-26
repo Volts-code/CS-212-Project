@@ -6,12 +6,12 @@ img {
 }
 
 body {
-    background-color: #F7DBA7;
-    font-family:'Times New Roman', Times, serif;
+    background-color: white;
+    font-family: Arial;
 }
 
 .navbar{
-    background: #667761;
+    background: rgba(19, 38, 92);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar h2{
-    color: black;
+    color: white;
 }
 
 .navmenu{
@@ -37,7 +37,7 @@ body {
 }
 
 .navmenu a{
-    color: black;
+    color: white;
     margin-right:15px;
     font-size:18px;
 }
@@ -54,11 +54,12 @@ body {
 }
 
 .dashboard{
-    background: #667761;
+    background: rgba(19, 38, 92);
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 5px gray;
+    color: white;
 }
 
 input{
@@ -83,7 +84,7 @@ select{
 }
 
 .card {
-    background-color: antiquewhite;
+    background-color: rgba(19, 38, 92);
     border: 1px solid aliceblue;
     padding: 8px;
     border-radius: 12px;
@@ -91,10 +92,10 @@ select{
 
 .tag {
     padding: 4px 8px;
-    border: 1px solid #667761;
+    border: 1px solid white;
     font-size: 12px;
     font-weight: 600;
-    color:black;
+    color:white;
 }
 
 .book-title {
@@ -103,9 +104,9 @@ select{
     margin-top: 16px
 }
 
-p {
+.card p {
     font-size: 14px;
-    color: black;
+    color: white;
     line-height: 150%
 }
 
@@ -135,7 +136,7 @@ button:hover {
     bottom: 0;
     width: 100%;
     height:fit-content;
-    background-color: antiquewhite;
+    background-color: white;
     color:black;
     text-align: center;
     padding: 15px;
