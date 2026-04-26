@@ -1,10 +1,10 @@
 body {
-    background-color: #F7DBA7;
-    font-family:'Times New Roman', Times, serif;
+    background-color: white;
+    font-family: Arial;
 }
 
 .navbar{
-    background: #667761;
+    background: rgba(19, 38, 92);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +13,7 @@ body {
 }
 
 .navbar h2{
-    color: black;
+    color: white;
 }
 
 .navmenu{
@@ -30,7 +30,7 @@ body {
 }
 
 .navmenu a{
-    color: black;
+    color: white;
     margin-right:15px;
     font-size:18px;
 }
@@ -43,7 +43,7 @@ body {
 
 .data {
     display: flex;
-    background-color: #F7DBA7;
+    background-color: white;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@ body {
     width: 400px;
     height: 400px;
     padding: 20px;
-    background-color: antiquewhite;
+    background-color: aliceblue;
     border-radius: 20px;
     box-shadow: 0px 20px 23px 5px rgba(0, 0, 0, 0.4);
 }
@@ -92,19 +92,19 @@ body {
 .content .first{
     height: 40px;
     width: 90%;
-    background-color: #284139;
+    background-color: green;
 }
 
 .content .second {
     height: 40px;
     width: 40%;
-    background-color: #111a19;
+    background-color: red;
 }
 
 .content .third {
     height: 40px;
     width: 60%;
-    background-color: #c57b57;
+    background-color: blue;
 }
 
 .loader span {
@@ -119,7 +119,7 @@ body {
     bottom: 0;
     width: 100%;
     height:fit-content;
-    background-color: antiquewhite;
+    background-color: white;
     color:black;
     text-align: center;
     padding: 15px;
