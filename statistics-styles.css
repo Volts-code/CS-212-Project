@@ -103,7 +103,7 @@ body {
 
 .content .third {
     height: 40px;
-    width: 60%;
+    width: 95%;
     background-color: blue;
 }
 
@@ -123,8 +123,4 @@ body {
     color:black;
     text-align: center;
     padding: 15px;
-}
-
-@media screen and (max-width: 600px) {
-    
 }
